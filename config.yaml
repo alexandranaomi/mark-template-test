@@ -1,0 +1,30 @@
+iaFile: ./ia.yaml
+
+title: Customizable title
+
+htmlCustomization:
+  path: ./htmlCustomization.html
+  position: head
+
+header:
+  - label: Custom hover menu
+    position: left
+    link: https://www.example.com
+    options:
+      - label: menu item
+        link: https://www.example.com
+    type: hover
+  - label: Example of toggle menu
+    position: right
+    options:
+      - label: menu item
+        link: https://www.example.com
+    type: toggle
+
+footer:
+  copyrightText: Copyright text
+  options:
+    - label: Contact
+      link: https://www.example.com
+    - label: About
+      link: https://www.example.com
