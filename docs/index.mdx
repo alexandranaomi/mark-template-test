@@ -7,19 +7,19 @@ title: Home
 
 ### Fontes de pesquisa
 
-Clique [aqui](https://philips.stackenterprise.co/questions/2241?rq=1) para ver o roteiro de criação de páginas usando o [MARK](https://www.dls.philips.com/app/mark/) do Stackoverflow da Philips.
+Clique [aqui](https://philips.stackenterprise.co/questions/2241?rq=1#openInNewTab) para ver o roteiro de criação de páginas usando o [MARK](https://www.dls.philips.com/app/mark/#openInNewTab) do Stackoverflow da Philips.
 
-[Aqui](https://dls-infra.internal.philips/#dls-infra) para informações do DLS-Infra.
+[Aqui](https://dls-infra.internal.philips/#dls-infra#openInNewTab) para informações do DLS-Infra.
 
-E [aqui](https://continuous-compliance.philips-internal.com/rules#rules) para ver as regras de *compliance*.
+E [aqui](https://continuous-compliance.philips-internal.com/rules#rules#openInNewTab) para ver as regras de *compliance*.
 
 ### Passo a Passo
 
-Após ter o [MARK instalado](https://www.dls.philips.com/app/mark/setup-and-workflow/installation#nodejs-145) na versão 0.25.1 (use `mark -V` para ver a versão instalada) siga os passos abaixo:
+Após ter o [MARK instalado](https://www.dls.philips.com/app/mark/setup-and-workflow/installation#nodejs-145#openInNewTab) na versão 0.25.1 (use `mark -V` para ver a versão instalada) siga os passos abaixo:
 
 #### 1. Crie o repositório 
 
-Crie o repositório no Github do philips-internal usando este [template](https://github.com/philips-internal/mark-template). Basta clicar no botão verde "Use this template > Create a new Repository". Aí é só batizar e descrever a finalidade dele.
+Crie o repositório no Github do philips-internal usando este [template](https://github.com/philips-internal/mark-template#openInNewTab). Basta clicar no botão verde "Use this template > Create a new Repository". Aí é só batizar e descrever a finalidade dele.
 
 #### 2. Clone o repositório
 
@@ -43,7 +43,7 @@ Use `mark serve config.yaml` para executar o MARK localmente e testar se está t
 
 #### 4. Crie o philips-repo.yaml
 
-Na raiz do projeto (ou dentro da pasta .github) crie o arquivo [philips-repo.yaml](https://continuous-compliance.philips-internal.com/rules/89b2a779-0fab-423c-99b9-ed88d958f19d#description):
+Na raiz do projeto (ou dentro da pasta .github) crie o arquivo [philips-repo.yaml](https://continuous-compliance.philips-internal.com/rules/89b2a779-0fab-423c-99b9-ed88d958f19d#description#openInNewTab):
 
 ```
 # Business Category according to https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/AllItems.aspx
@@ -60,13 +60,13 @@ business-category-details: https://share.philips.com/sites/SWCoE/Lists/List%20of
 version: 1
 ```
 
-Conforme a [lista de códigos](https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/AllItems.aspx?sortField=ID&isAscending=true&viewid=bf5cc3e1%2D6fe3%2D4c0c%2D8e94%2D8c04c26a40a2) "22 = EMR & CM" e "89 = Design XD".
+Conforme a [lista de códigos](https://share.philips.com/sites/SWCoE/Lists/List%20of%20Business%20Categories/AllItems.aspx?sortField=ID&isAscending=true&viewid=bf5cc3e1%2D6fe3%2D4c0c%2D8e94%2D8c04c26a40a2#openInNewTab) "22 = EMR & CM" e "89 = Design XD".
 
 #### 5. Crie o CODEOWNERS
 
 Na raiz do projeto (ou dentro da pasta .github), crie o arquivo CODEOWNERS onde serão listados os validadores de PR. 
 
-Exemplo do [emr-tokens](https://github.com/philips-internal/emr-tokens/blob/dev/.github/CODEOWNERS):
+Exemplo do [emr-tokens](https://github.com/philips-internal/emr-tokens/blob/dev/.github/CODEOWNERS#openInNewTab):
 
 ```
 * @philips-internal/emr-designtech-admins
@@ -80,7 +80,7 @@ package.json  @philips-internal/alfred
 .release-it.json @philips-internal/alfred
 ```
 
-Exemplo do [OSPO](https://github.com/philips-internal/OSPO/blob/main/CODEOWNERS):
+Exemplo do [OSPO](https://github.com/philips-internal/OSPO/blob/main/CODEOWNERS#openInNewTab):
 
 ```
 # These owners will be the default owners for everything in
@@ -93,17 +93,17 @@ Exemplo do [OSPO](https://github.com/philips-internal/OSPO/blob/main/CODEOWNERS)
 
 #### 6. Solicite domínio `*.philips-internal.com`
 
-Solicite um domínio `*.philips-internal.com` abrindo uma issue [aqui](https://github.com/philips-internal/request-philips-internal-pages)
+Solicite um domínio `*.philips-internal.com` abrindo uma issue [aqui](https://github.com/philips-internal/request-philips-internal-pages#openInNewTab)
 
 #### 7. Solicite acessos ao DLS-Infra
 
-Solicite acessos ao [DLS-Infra](https://dls-infra.internal.philips/how-to/access#access) e ao [Philips Runner](https://dls-infra.internal.philips/how-to/request-philips-runners#request-philips-runner) para rodar as *__actions__*.
+Solicite acessos ao [DLS-Infra](https://dls-infra.internal.philips/how-to/access#access#openInNewTab) e ao [Philips Runner](https://dls-infra.internal.philips/how-to/request-philips-runners#request-philips-runner#openInNewTab) para rodar as *__actions__*.
 
 #### 8. Crie workflows no Github Actions
 
-Dentro da pasta .github, crie uma pasta workflows para armazenar os [workflows](https://www.dls.philips.com/app/mark/setup-and-workflow/setting-up-github-actions#about-github-actions) do Github Actions do projeto.
+Dentro da pasta .github, crie uma pasta workflows para armazenar os [workflows](https://www.dls.philips.com/app/mark/setup-and-workflow/setting-up-github-actions#about-github-actions#openInNewTab) do Github Actions do projeto.
 
-Exemplo do `deploy-pages.yml` do [continuous-compliance](https://github.com/philips-internal/continuous-compliance/blob/main/.github/workflows/deploy-pages.yml) para o *__deploy__* no Github Pages:
+Exemplo do `deploy-pages.yml` do [continuous-compliance](https://github.com/philips-internal/continuous-compliance/blob/main/.github/workflows/deploy-pages.yml#openInNewTab) para o *__deploy__* no Github Pages:
 
 ```
 name: GH Pages deployment
