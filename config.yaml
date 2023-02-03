@@ -1,6 +1,6 @@
 iaFile: ./ia.yaml
 
-title: Customizable title
+title: Repo with Mark
 
 htmlCustomization:
   path: ./htmlCustomization.html
