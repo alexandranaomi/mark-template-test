@@ -1,4 +1,5 @@
 iaFile: ./ia.yaml
+docsFolder: ./src
 
 title: Repo with Mark
 
