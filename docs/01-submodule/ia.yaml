@@ -1,0 +1,9 @@
+architectures:
+  - id: default
+    name: default
+    structure:
+      - path: /
+        doc: index
+
+      - path: submodule
+        doc: 01-submodule/submodule
