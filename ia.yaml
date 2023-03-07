@@ -8,9 +8,6 @@ architectures:
           - path: another-page
             doc: example-docs/another-page
 
-      - path: submodule
-        import: 01-submodule/ia.yaml
-
       - path: design-system
         import: 03-design-system/ia.yaml
 
