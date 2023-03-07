@@ -11,18 +11,6 @@ architectures:
       - path: example-docs
         doc: example-docs/index
 
-      - path: overview
-        doc: 01-overview/overview
-
-      - title: Design system
-        subpaths:
-          - title: Components
-            path: design-system/components
-            doc: 03-design-system/01-components/01-components
-          - title: Modules
-            path: design-system/modules
-            doc: 03-design-system/02-modules/01-modules
-
       - path: naming-convention
         doc: example-docs/naming-convention
 

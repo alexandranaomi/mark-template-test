@@ -1,6 +1,0 @@
-[submodule "docs/01-overview"]
-	path = docs/01-overview
-	url = https://github.com/alexandranaomi/mark-template-test-2.git
-[submodule "docs/03-design-system"]
-	path = docs/03-design-system
-	url = https://github.com/alexandranaomi/mark-template-test-3.git
