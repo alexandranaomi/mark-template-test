@@ -8,9 +8,6 @@ architectures:
           - path: another-page
             doc: example-docs/another-page
 
-      - path: design-system
-        import: 03-design-system/ia.yaml
-
       - path: example-docs
         doc: example-docs/index
 
