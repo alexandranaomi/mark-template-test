@@ -1,0 +1,83 @@
+---
+id: "emr-package"
+title: "Emr-package"
+---
+
+## Instalar emr-tokens package
+
+### 1. Configurar proxy
+
+Conectar na VPN-PhilipsSAML-EMR.
+
+Abrir o terminal e digitar `ping proxy` para verificar o endereço. Ele vai aparecer na primeira linha:
+
+```
+PING proxy.whebdc.com.br (192.168.253.107): 56 data bytes
+```
+
+Executar os comandos abaixo indicando o endereço:porta (a porta é 3128):
+
+```
+npm config set proxy "http://192.168.253.107:3128"
+```
+
+```
+npm config set https-proxy "http://192.168.253.107:3128"
+```
+
+Outra solução: no terminal do projeto após tentar instalar o pacote, quando aparecer o erro **"npm ERR! network If you are behind a proxy | npm ERR! network 'proxy' config is set properly"** executar:
+
+```
+npm config set registry http://registry.npmjs.org/
+```
+
+Para verificar os proxys, entrar na pasta e verificar o arquivo oculto (SHIFT + CMD + .) alenaomi > .npmrc
+
+### 2. Instalar o package
+
+Depois de gerar um classic token com a permissão READ no GitHub ( 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 ), abrir a pasta do projeto, abrir um terminal e executar:
+
+```
+npm login --scope philips-internal --auth-type=legacy
+
+# inputs:
+  # username: Your username at GitHub
+  # password: Your token (PAT)
+
+# output:
+  # Logged in as <your_username> to scope @philips-internal on https://npm.pkg.github.com.
+```
+
+Para instalar o pacote do emr-tokens, ver a ultima [versão](https://github.com/philips-internal/emr-tokens/pkgs/npm/emr-tokens-variables) e executar:
+
+```
+npm install @philips-internal/emr-tokens-variables@1.0.0-unstable.22
+```
+
+Ou pode tentar seguir as instruções do emr-tokens:
+
+2. Install the necessary packages using:
+
+   ```sh
+     npm install @philips-internal/emr-tokens-variables --save
+     # or
+     yarn add @philips-internal/emr-tokens-variables
+   ```
+
+3. Now, let's import Emr Tokens. Add the following to your js file.
+
+   ```javascript
+   //Import Emr Tokens
+   import * as tokens from '@philips-internal/emr-tokens-variables';
+   ```
+
+4. Example to use
+
+   ```javascript
+   //Import Emr Tokens
+   import { TextPrimary } from '@philips-internal/emr-tokens-variables';
+
+   const element = document.createElement('div');
+   element.innerHTML = 'Emr Tokens';
+   element.style.color = TextPrimary;
+   ```
